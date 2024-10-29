@@ -10,14 +10,33 @@ This project classifies indigenous Nepali music genres by converting audio files
 
 # Table of Contents
 1. [Project Description](#project-description)
-2. [Data Preparation](#data-preparation)
-3. [Data Loaders](#data-loaders)
-4. [Model Architecture](#model-architecture)
-5. [Training and Evaluation](#training-and-evaluation)
-6. [Requirements](#requirements)
-7. [How To Use](#howtouse)
-8. [License](#license)
-9. [Acknowledgments](#acknowledgments)
+2. [Requirements](#requirements)
+3. [Data Preparation](#data-preparation)
+4. [Data Loaders](#data-loaders)
+5. [Model Architecture](#model-architecture)
+6. [Training and Evaluation](#training-and-evaluation)
+7.
+8. [How to Use](#how-to-use)
+9. [License](#license)
+10. [Acknowledgments](#acknowledgments)
+
+
+
+
+## Requirements
+To run this project, you need to install the required Python packages. You can do this by running the following command in your terminal:
+
+**pip install -r requirements.txt**
+
+
+## How to Use
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/Melina-Singh/Music-Classification.git
+   cd Music-Classification
+
+
+
 
 
 ## Data Preparation
@@ -80,16 +99,16 @@ The ROC curve provides a graphical representation of the model's true positive r
 
 ![ramro_ROC](https://github.com/user-attachments/assets/9db92795-62d7-4017-b39a-7333729e2576)
 
-
 ### Model Saving and Loading
 Instructions for saving and loading the model is provided in the training scripts.
 
 
+## License
+This project is licensed under the GPL License. See the LICENSE file for more information.
 
 
+## Authors
+- **Melina Singh**
+- **Rakhsya Bhusal**
 
-## How to Use
-1. **Clone the Repository**: 
-   ```bash
-   git clone https://github.com/Melina-Singh/Music-Classification.git
-   cd Music-Classification
+##
