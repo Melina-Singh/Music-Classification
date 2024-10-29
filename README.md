@@ -1,6 +1,13 @@
 # Music-Classification
 
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-GPL-blue)
+![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)
+
+This project classifies Nepali music genres...
+
+
 
 ## Project Description
 This project classifies indigenous Nepali music genres by converting audio files into log spectrograms and training custom **ResNet models**. The ResNets effectively capture features from spectrograms for accurate genre classification. The repository includes all necessary code for data processing and model training.
@@ -11,13 +18,13 @@ This project classifies indigenous Nepali music genres by converting audio files
 # Table of Contents
 1. [Project Description](#project-description)
 2. [Requirements](#requirements)
-3. [Data Preparation](#data-preparation)
-4. [Data Loaders](#data-loaders)
-5. [Model Architecture](#model-architecture)
-6. [Training and Evaluation](#training-and-evaluation)
-7.
-8. [How to Use](#how-to-use)
-9. [License](#license)
+3. [How to Use](#how-to-use)
+4. [Data Preparation](#data-preparation)
+5. [Data Loaders](#data-loaders)
+6. [Model Architecture](#model-architecture)
+7. [Training and Evaluation](#training-and-evaluation)
+8. [License](#license)
+9. [Authors](#authors)
 10. [Acknowledgments](#acknowledgments)
 
 
@@ -30,6 +37,8 @@ To run this project, you need to install the required Python packages. You can d
 
 
 ## How to Use
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+
 1. **Clone the Repository**: 
    ```bash
    git clone https://github.com/Melina-Singh/Music-Classification.git
@@ -40,6 +49,12 @@ To run this project, you need to install the required Python packages. You can d
 
 
 ## Data Preparation
+
+![Data Collected](https://img.shields.io/badge/data-collected-brightgreen)
+![Data Cleaned](https://img.shields.io/badge/data-cleaned-brightgreen)
+![Data Augmented](https://img.shields.io/badge/data-augmented-yellow)
+![Standardized Input](https://img.shields.io/badge/input-standardized-blue)
+
 
 1. **Data Collection**: 
    - Videos were initially gathered from free online platforms.
@@ -62,7 +77,9 @@ To run this project, you need to install the required Python packages. You can d
 The data loaders in this project efficiently load and preprocess log mel spectrograms for training and validation. The **SpectrogramDataset** class organizes audio spectrograms into a structured dataset, associating each spectrogram with its respective genre label based on the directory structure. It includes error handling to skip corrupted images and shuffles the files for randomness during training. The **DataLoader** class creates batches of spectrograms, allowing for efficient parallel data loading, while applying necessary transformations such as resizing and normalization to prepare the images for input into the ResNet models.
 
 
-## Model Architecture
+## Model Architecture 
+![Model Architecture](https://img.shields.io/badge/Model%20Architecture-ResNet-blue.svg)
+
 
 The ResNet Architecture consists of:
 
@@ -104,11 +121,18 @@ Instructions for saving and loading the model is provided in the training script
 
 
 ## License
-This project is licensed under the GPL License. See the LICENSE file for more information.
+This project is licensed under the [GNU General Public License v3.0](LICENSE). See the LICENSE file for more details.
 
 
 ## Authors
 - **Melina Singh**
-- **Rakhsya Bhusal**
+- **Rakshya Bhusal**
 
-##
+## Acknowledgments
+We would like to extend my heartfelt thanks to **Dr. Yagya Raj Pandeya** our **Supervisor**  and also the** Head Of Department**(DoAI) for his invaluable guidance and support throughout this project. His expertise and encouragement were instrumental in helping us navigate the challenges of this work.
+
+
+[![Contributors](https://img.shields.io/badge/contributors-1-orange.svg)](https://github.com/Melina-Singh/Music-Classification/graphs/contributors)
+
+We welcome contributions to this project! If you're interested in contributing, please feel free to fork the repository and submit a pull request. Your feedback, suggestions, and improvements are greatly appreciated.
+
